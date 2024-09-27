@@ -1,0 +1,87 @@
+/*PC*/
+@media only screen and (min-width: 601px){
+    @keyframes color-change{
+        0%{color: teal;}
+        20%{color: gold;}
+        40%{color: indianred;}
+        60%{color: violet;}
+        80%{color: green;}
+        100%{color:teal;}
+    }
+    
+    @keyframes blinker {
+        50% {opacity: 0;}
+    }
+    /*rainbow text*/
+    .color-change-text{
+          animation: 1s ease-in-out infinite color-change;
+    }
+    /*text blink*/
+    .blink {
+        animation: blinker 0.2s linear infinite;
+    }
+    
+    /*link display custom*/
+    a{
+        text-decoration: none;
+    }
+    
+    .custom-link{
+        color: black;
+    }
+    a.custom-link:visited {
+        color: black;
+    }
+    a.custom-link:hover {
+        color: black; 
+    }
+    
+    body{
+        background-color: rgb(34, 34, 34);
+        margin: 0;
+    }
+    .option{
+        display: inline; 
+        border: solid black; 
+        background-color: aqua; 
+        padding: 0.7%;
+    }
+    .ad{
+        height: 80%; 
+        border: solid black;
+    }
+    
+    .text{
+        color: white; 
+        font-size: 1.3vw; 
+        padding-left: 10%; 
+        padding-right: 10%;
+    }
+    .chudenvientrang{
+        
+        text-shadow:
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    }
+    
+    .conmeo{
+        clear:both;float: left; width: 20%; background-color: black;height: 100%;
+    }
+    .chipchip{
+        float: right; width: 20%; background-color: black;height: 100%;
+    }
+    .vibings{
+        float: left; width: 10%; text-align: center; font-size: 18px;background-color: black;line-height: 580%;height: 100%;
+    }
+    .uwu{
+        float: left; width: 40%; background-color: black; text-align: center; font-size: 50px;line-height: 250%;height: 100%;
+    }
+    .hsrpicture{
+        border: solid black; height: 30vw;text-align: center;
+    }
+    .cochu{
+        font-size: 50px;
+    }
+}
