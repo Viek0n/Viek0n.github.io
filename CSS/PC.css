@@ -1,0 +1,114 @@
+/*PC*/
+@media only screen and (min-width: 601px){
+    /*Default value*/
+    :root {
+        --blink-duration: 0.2s; /* Default blink duration */
+        /*Video*/
+        --video-width:100%;
+        --video-height:100%;
+    }
+    /*Background & pics*/
+    body{
+        background-color: rgb(34, 34, 34);
+        margin: 0;
+    }
+    .bigimage{
+        height: 30vw;
+        position: relative;
+    }
+    .smallimage{
+        position: absolute;
+        top: 10px; /* Adjust the top position */
+        right: 10px; /* Adjust the left position */
+        width: 70px; /* Set the size of the overlay image */
+        opacity: 0.2; /* Optional: Make the overlay image semi-transparent */
+    }
+    /*animation*/
+    @keyframes color-change{
+        0%{color: teal;}
+        20%{color: gold;}
+        40%{color: indianred;}
+        60%{color: violet;}
+        80%{color: green;}
+        100%{color:teal;}
+    }
+
+    @keyframes blinker {
+        50% {opacity: 0;}
+    }
+    
+    /*link display custom*/
+    a{
+        text-decoration: none;
+    }
+    .custom-link{
+        color: black;
+    }
+    a.custom-link:visited {
+        color: yellow;
+    }
+    a.custom-link:hover {
+        color: yellow; 
+    }
+
+    /*video display*/
+    .custom-video{
+        height: var(--video-height);
+        width: var(--video-width);
+    }
+
+    /*Option box*/
+    .option{
+        display: inline; 
+        border: solid black; 
+        background-color: aqua; 
+        padding: 0.7%;
+    }
+
+    /*Text*/
+    .bigtext{
+        font-size: 50px;
+    }
+    .text{
+        color: white; 
+        font-size: 30px; 
+        padding-left: 10%; 
+        padding-right: 10%;
+    }
+    .adtext{
+        color: white; 
+        font-size: 25px; 
+        padding: 10px 0px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    /*rainbow text*/
+    .color-change-text{
+        animation: 1s ease-in-out infinite color-change;
+     }
+     /*blink*/
+    .blink {
+        animation: blinker var(--blink-duration) linear infinite;
+    }
+
+    /*Misc*/
+    .ad{
+        height: 50%; 
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .cat{
+        clear:both;float: left; width: 20%; background-color: black;height: 100%;
+    }
+    .chip{
+        float: right; width: 20%; background-color: black;height: 100%;
+    }
+    .vibing{
+        float: left; width: 10%; text-align: center; font-size: 35px;background-color: black;line-height: 450%;height: 100%;
+    }
+    .uwu{
+        float: left; width: 40%; background-color: black; text-align: center; font-size: 80px;line-height: 250%;height: 100%;
+    }
+}
